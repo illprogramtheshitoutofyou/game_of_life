@@ -28,6 +28,13 @@ class Simulator:
 
         #TODO: Do something to evolve the generation
 
+        for i in range(110):
+            for j in range(110):
+                if self.world.get(j,i):
+                    #print(j,i)
+                    #print(sum(self.world.get_neighbours(i,j)),"\n")
+                    pass
+
         return self.world
 
     def get_generation(self):
